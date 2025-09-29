@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Projet E-commerce</h1>
+
+  
+  <form id="productForm">
+    <input type="text" id="productName" placeholder="Nom du produit" required>
+    <input type="text" id="productDesc" placeholder="Description" required>
+    <input type="number" id="productPrice" placeholder="Prix (CFA)" required min="1">
+    <button type="submit">Ajouter Produit</button>
+  </form>
+
+  
+  <h2>Produits disponibles</h2>
+  <div id="productList"></div>
+
+
+  <h2>Mon Panier  (<span id="cartCount">0</span> articles)</h2>
+  <div id="cartList"></div>
+  <h3>Total : <span id="cartTotal">0</span> CFA</h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
